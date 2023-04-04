@@ -10,7 +10,7 @@ setup(
         ]
     },
     install_requires=[
-        'openai==3.0.0',
+        'openai==0.27.4',
     ],
     author='Shiyao Wang',
     author_email='galadata@sina.com',
