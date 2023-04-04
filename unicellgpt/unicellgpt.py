@@ -79,6 +79,7 @@ def get_api_key():
 
 def start():
     global api_key
+    api_key = None # define in the gloabl scope
     api_key = get_api_key()
     msg()
     chat()
