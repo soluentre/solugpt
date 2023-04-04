@@ -1,6 +1,0 @@
-setup.py
-unicellgpt.egg-info/PKG-INFO
-unicellgpt.egg-info/SOURCES.txt
-unicellgpt.egg-info/dependency_links.txt
-unicellgpt.egg-info/requires.txt
-unicellgpt.egg-info/top_level.txt

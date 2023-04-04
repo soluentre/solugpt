@@ -1,16 +1,19 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='unicellgpt',
-    version='0.3',
-    description='A package for unicell firm to use GPT models',
+    name='chatgpt',
+    version='0.4',
+    packages=find_packages(),
+    entry_points={
+        'console_scripts': [
+            'chatgpt = chatgpt.chat:main'
+        ]
+    },
+    install_requires=[
+        'openai==3.0.0',
+    ],
     author='Shiyao Wang',
     author_email='galadata@sina.com',
-    packages=find_packages(),
-    install_requires=[
-        'numpy',
-        'torch',
-        'transformers',
-        'openai'
-    ]
+    description='A package for chatting with GPT-3.',
+    url='https://github.com/soluentre/unicellgpt'
 )
