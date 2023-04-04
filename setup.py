@@ -2,11 +2,11 @@ from setuptools import setup, find_packages
 
 setup(
     name='unicellgpt',
-    version='1.0',
+    version='1.1',
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'unicellgpt = unicellgpt.unicellgpt:main'
+            'unicellgpt = unicellgpt.chat:main'
         ]
     },
     install_requires=[
