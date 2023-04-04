@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='unicellgpt',
-    version='0.1',
+    version='0.2',
     description='A package for unicell firm to use GPT models',
     author='Shiyao Wang',
     author_email='galadata@sina.com',
@@ -10,6 +10,7 @@ setup(
     install_requires=[
         'numpy',
         'torch',
-        'transformers'
+        'transformers',
+        'openai'
     ]
 )
