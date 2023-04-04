@@ -4,6 +4,7 @@ import openai
 def msg():
     print(
     """感谢使用单元格ChatGPT外接机器人
+    
     指令前缀：
     
     -c 输入开始对话
