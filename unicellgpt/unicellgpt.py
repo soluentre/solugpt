@@ -41,6 +41,7 @@ def chat():
             errormsg()
 
 def c(prompt):
+    openai.api_key = api_key
     global messages
     response = openai.ChatCompletion.create(
       model="gpt-3.5-turbo",
@@ -57,12 +58,12 @@ def rs():
 
 def get_api_key():
     while True:
-        api_key = input("请输入API密钥：")
-        if not re.match(r"^[A-Za-z0-9\-]+$", api_key):
+        apikey = input("请输入API密钥：")
+        if not re.match(r"^[A-Za-z0-9\-]+$", apikey):
             print("API密钥只能由数字和英文字母组成，请重新输入！")
             print("------------------------------")
         else:
-            openai.api_key = api_key
+            openai.api_key = apikey
             try:
                 openai.Completion.create(
                   engine="text-davinci-002",
@@ -72,15 +73,15 @@ def get_api_key():
                 )
                 print("API密钥输入正确！")
                 print("------------------------------")
-                return api_key
+                return apikey
             except openai.error.AuthenticationError:
                 print("API密钥错误，请重新输入！")
                 print("------------------------------")
 
 def start():
-    global api_key
-    api_key = None # define in the gloabl scope
-    api_key = get_api_key()
+    global apikey
+    apikey = None # define in the gloabl scope
+    apikey = get_api_key()
     msg()
     chat()
 
