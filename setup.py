@@ -1,12 +1,12 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='chatgpt',
+    name='unicellgpt',
     version='0.5',
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'chatgpt = chatgpt.chat:main'
+            'unicellgpt = unicellgpt.unicellgpt:main'
         ]
     },
     install_requires=[

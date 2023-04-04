@@ -79,10 +79,10 @@ def get_api_key():
                 print("API密钥错误，请重新输入！")
                 print("------------------------------")
 
-def main():
+def start():
     api_key = get_api_key()
     msg()
     chat()
 
 if __name__ == '__main__':
-    main()
+    start()
