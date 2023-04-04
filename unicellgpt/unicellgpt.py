@@ -80,6 +80,7 @@ def get_api_key():
                 print("------------------------------")
 
 def start():
+    global api_key
     api_key = get_api_key()
     msg()
     chat()
