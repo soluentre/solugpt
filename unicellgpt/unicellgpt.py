@@ -41,7 +41,7 @@ def chat():
             errormsg()
 
 def c(prompt):
-    openai.api_key = api_key
+    openai.api_key = apikey
     global messages
     response = openai.ChatCompletion.create(
       model="gpt-3.5-turbo",
